@@ -1,0 +1,8 @@
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\bin\Debug\W3R_Excercises.exe.config
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\bin\Debug\W3R_Excercises.exe
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\bin\Debug\W3R_Excercises.pdb
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\obj\Debug\W3R_Excercises.csproj.AssemblyReference.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\obj\Debug\W3R_Excercises.csproj.SuggestedBindingRedirects.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\obj\Debug\W3R_Excercises.csproj.CoreCompileInputs.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\obj\Debug\W3R_Excercises.exe
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\W3R_Excercises\W3R_Excercises\obj\Debug\W3R_Excercises.pdb
