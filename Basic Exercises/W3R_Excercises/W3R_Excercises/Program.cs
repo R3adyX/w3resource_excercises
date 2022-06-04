@@ -19,7 +19,7 @@ namespace W3R_Excercises
             Console.WriteLine();
 
 
-            //Ex 2 Write a C# Sharp program to print the result of dividing two numbers.
+            //Ex 2 Write a C# Sharp program to print the sum of two numbers.
             var n1 = 10;
             var n2 = 2;
 
