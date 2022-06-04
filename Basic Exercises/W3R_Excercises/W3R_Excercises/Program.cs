@@ -10,10 +10,14 @@ namespace W3R_Excercises
     {
         static void Main(string[] args)
         {
+            
             var number1 = 0;
             var number2 = 0;
             var number3 = 0;
-            
+            var number4 = 0;
+            var number5 = 0;
+
+
             //Ex 1 Write a C# Sharp program to print Hello and your name in a separate line.
             Console.WriteLine("Hello: Stephen Cutts");
             Console.WriteLine();
@@ -72,21 +76,78 @@ namespace W3R_Excercises
 
             var ex6Result = (number1 * number2) * number3;
 
-            Console.WriteLine($"{number1} x {number2} x {number3} = {ex6Result}");
+            Console.WriteLine($"{number1} x {number2} x {number3} = {ex6Result}");            
 
-            number1 = 0;
-            number2 = 0;
-            number3 = 0;
+            //Ex 7 Write a C# Sharp program to print on screen the output of adding,
+            //subtracting, multiplying and dividing of two numbers which will be entered by the user
+            Console.Write("1st number: ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("2nd number: ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+
+            var add = number1 + number2;
+            var subtract = number1 - number2;
+            var multiply = number1 * number2;
+            var divide = number1 / number2;
+            var mod = number1 % number2;
+
+            Console.WriteLine($"{number1} + {number2} = {add}");
+            Console.WriteLine($"{number1} - {number2} = {subtract}");
+            Console.WriteLine($"{number1} * {number2} = {multiply}");
+            Console.WriteLine($"{number1} / {number2} = {divide}");
+            Console.WriteLine($"{number1} % {number2} = {mod}");
+
+            Console.WriteLine();
+
+
+            //Ex 8 Write a C# Sharp program that takes a number as input and print its multiplication table
+            Console.Write("Enter a Number: ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            for (var i = 0; i < 3; i++)
+            {
+                var ex8Result = number1 * i;
+                Console.WriteLine($"{number1} * {i} = {ex8Result}");
+            }
+
+            //Ex 9 Write a C# Sharp program that takes four numbers as input to calculate and print the average.
+            var inputTotal = 0;
+            for (var i = 1; i < 5; i++)
+            {
+                Console.Write("Enter a number: ");
+                inputTotal++;
+                switch(i)
+                {
+                    case 1: number1 = Convert.ToInt32(Console.ReadLine()); break;
+                    case 2: number2 = Convert.ToInt32(Console.ReadLine()); break;
+                    case 3: number3 = Convert.ToInt32(Console.ReadLine()); break;
+                    case 4: number4 = Convert.ToInt32(Console.ReadLine()); break;
+                    default: break;
+                }
+            }
+
+            var average = (number1 + number2 + number3 + number4) / inputTotal;
+            Console.WriteLine($"The average of {number1}, {number2}, {number3}, {number4} is : {average} Number of user Entries: {inputTotal}");
 
             
-            //Ex 7
-
-            //Ex 8
-
-            //Ex 9
-
-            //Ex 10
-
+            //Ex 10 Write a C# Sharp program to that takes three numbers(x,y,z) as input and print the output of (x+y).z and x.y + y.z.
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            for (var i = 1; i < 5; i++)
+            {
+                Console.Write("Enter a number: ");
+                switch (i)
+                {
+                    case 1: x = Convert.ToInt32(Console.ReadLine()); break;
+                    case 2: y = Convert.ToInt32(Console.ReadLine()); break;
+                    case 3: z = Convert.ToInt32(Console.ReadLine()); break;
+                    default: break;
+                }
+            }
+            var ex10Results1 = (x + y) * z;
+            var ex10Results2 = x * y + y * z;
+            Console.WriteLine($"Result of specified numbers {x}, {y}, {z}, ({x}+{y}) * z is: {ex10Results1} and {x} * {y} + {y} * {z} is: {ex10Results2}");
             //Ex 11
 
             //Ex 12
