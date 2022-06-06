@@ -148,27 +148,172 @@ namespace W3R_Excercises
             var ex10Results1 = (x + y) * z;
             var ex10Results2 = x * y + y * z;
             Console.WriteLine($"Result of specified numbers {x}, {y}, {z}, ({x}+{y}) * z is: {ex10Results1} and {x} * {y} + {y} * {z} is: {ex10Results2}");
-            //Ex 11
+            
 
-            //Ex 12
+            //Ex 11 Write a C# Sharp program that takes an age (for example 20) as input and prints something as "You look older than 20".
+         
+            Console.Write("Enter age: ");
+            var age = Convert.ToInt32(Console.ReadLine());
 
-            //Ex 13
+            Console.WriteLine($"You look older than {age}.");
+            
 
-            //Ex 14
 
-            //Ex 15
+            //Ex 12 Write a C# program to that takes a number as input and display it four times in a row (separated by blank spaces), and then four times in the next row, with no separation. You should do it two times: Use Console. Write and then use {0}.
+            Console.WriteLine("Enter a Number:");
+            var exI12Input = Convert.ToInt32(Console.ReadLine());
+            Console.Write(exI12Input);
+            Console.Write(" ");
+            Console.Write(exI12Input);
+            Console.Write(" ");
+            Console.Write(exI12Input);
+            Console.Write(" ");
+            Console.Write(exI12Input);
+            Console.Write("");
+            Console.WriteLine();
 
-            //Ex 16
+            Console.Write(exI12Input);
+            Console.Write(exI12Input);
+            Console.Write(exI12Input);
+            Console.Write(exI12Input);
+            Console.WriteLine();
 
-            //Ex 17
+            Console.WriteLine("{0} {0} {0} {0}", exI12Input);
+            Console.WriteLine("{0}{0}{0}{0}", exI12Input);
+           
 
-            //Ex 18
+            //Ex 13 Write a C# program that takes a number as input and then displays a rectangle of 3 columns wide and 5 rows tall using that digit.
+            Console.Write("Enter a number: ");
+            var ex13Num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}{0}{0}", ex13Num);
+            Console.WriteLine("{0} {0}", ex13Num);
+            Console.WriteLine("{0} {0}", ex13Num);
+            Console.WriteLine("{0} {0}", ex13Num);
+            Console.WriteLine("{0}{0}{0}", ex13Num);
+            
 
-            //Ex 19
+            //Ex 14 Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit.
+            Console.Write("Enter the amount of celsius: ");
+            var celsius = Convert.ToInt32(Console.ReadLine());
+            var convertToKelvin = celsius + 273; //273.15
+            var convertToFahrenheit = celsius * 1.800 + 32;
+            Console.WriteLine($"Converted to Kelvin: {convertToKelvin}");
+            Console.WriteLine($"Converted to Kelvin: {convertToFahrenheit}");
 
-            //Ex 20
 
-            //Ex 
+            //Ex 15  Write a C# program remove specified a character from a non-empty string using index of a character.
+            var word = "Hello".ToLower();
+            char[] myStr = word.ToCharArray();
+            
+            Console.WriteLine(word);
+
+            Console.Write("Choose a letter to take out: ");
+            var ex15userinput = Convert.ToChar(Console.ReadLine().ToLower());
+
+            for (var i = 0; i < myStr.Length; i++)
+            {
+                if (myStr[i] == ex15userinput)
+                {
+                    continue;
+                }
+                Console.Write(myStr[i]);
+               
+            }
+            Console.WriteLine();
+          
+
+            //Ex 16 Write a C# program to create a new string from a given string where the first and last characters will change their positions.
+            Console.Write("Enter a word: ");
+            var oldString = Console.ReadLine().ToLower();
+            Console.WriteLine(FrontBack(oldString));
+            
+
+            //Ex 17 Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
+            Console.Write("Enter a word: ");
+            var ex17oldString = Console.ReadLine().ToLower();
+            Console.WriteLine(FrontAndBack(ex17oldString));
+
+            //Ex 18 Write a C# program to check two given integers and return true if one is negative and one is positive.
+            var ex18Num1 = -15;
+            var ex18Num2 = 25;
+
+            if ((ex18Num1 < 0) && (ex18Num2 >= 0))
+            {
+                Console.WriteLine($"First integer input : {ex18Num1}");
+                Console.WriteLine($"Second integer input : {ex18Num2}");
+                Console.WriteLine($"Is 1 Number Positive and 1 Negative: True");
+            }
+            else
+            {
+                Console.WriteLine($"Is 1 Number Positive and 1 Negative: False");
+            }
+            
+
+            //Ex 19 Write a C# program to compute the sum of two given integers, if two values are equal then return the triple of their sum.
+            var ex19Num1 = 5;
+            var ex19Num2 = 5;
+            Console.WriteLine(ThreeTimes(ex19Num1, ex19Num2));
+
+
+            //Ex 20 Write a C# program to get the absolute value of the difference between two given numbers. Return double the absolute value of the difference if the first number is greater than second number.
+            var ex20Num1 = 10;
+            var ex20Num2 = 5;
+            Console.WriteLine(AbsoluteDiff(ex20Num1, ex20Num2));
+
+
+
+        }
+        private static string FrontBack(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                Console.WriteLine("Value must not be empty!");
+                Environment.Exit(0);
+            }
+            
+            if (str.Length == 1) return str;
+
+            var first = str[0];
+            var last = str[str.Length - 1];
+            return last + str.Substring(1, str.Length - 2) + first;
+        }
+
+        private static string FrontAndBack(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                Console.WriteLine("Value must not be empty!");
+                Environment.Exit(0);
+            }
+
+            if (str.Length == 1) return str;
+
+            var first = str[0];
+            
+            return first.ToString().ToUpper() + str + first.ToString().ToUpper();
+        }
+
+        private static int ThreeTimes(int n1, int n2)
+        {
+            var sum = 0;
+
+            if (n1 == n2)
+            {
+                sum = (n1 + n1) * 3;
+            }
+            return sum;
+        }
+
+        private static int AbsoluteDiff(int n1, int n2)
+        {
+            int sum = 0;
+            var diffrence = n1 - n2;
+
+            if ( n1 > n2)
+            {
+                sum = diffrence * 3;
+            }
+            return sum;
         }
     }
 }

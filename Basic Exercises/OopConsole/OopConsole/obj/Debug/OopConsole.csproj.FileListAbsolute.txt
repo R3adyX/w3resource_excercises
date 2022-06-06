@@ -1,0 +1,8 @@
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\obj\Debug\OopConsole.csproj.AssemblyReference.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\obj\Debug\OopConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\obj\Debug\OopConsole.csproj.CoreCompileInputs.cache
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\bin\Debug\OopConsole.exe.config
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\bin\Debug\OopConsole.exe
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\bin\Debug\OopConsole.pdb
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\obj\Debug\OopConsole.exe
+C:\Users\sbcut\OneDrive\repo\Practice\w3resource c#\Basic Exercises\OopConsole\OopConsole\obj\Debug\OopConsole.pdb
